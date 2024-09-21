@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./asssets/css/style.css">
+</head>
+<body>
+    <main id="container">
+        <section>
+            <img src="./asssets/images/imageFront.svg">
+            
+        </section>
+    
+        <section id="calculator">
+            <form id="meu-formulario" autocomplete="off">
+                <h1 id="titulo"> CALCULE SEU IMC</h1>
+                
+                <label class="texto">
+                    Digite seu peso
+                </label>
+                <div class="caixa">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input id="peso" type="number">
+                    kg
+                </div>
+                <label class="texto">
+                    Digite sua altura
+                </label>
+                <div class="caixa">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input id="altura" type="number">
+                    cm
+                </div>
+                <button id="calculate">Calcular</button>
+                <label class="texto hidden" id="result_complete">
+                    <label id="result">
+                        
+                    </label>
+                    <label id="descripition">Descrição se ta ou nao acima do peso</label>
+                </label>
+                
+            </form>
+        </section>
+    </main>
+
+    <script>
+    document.getElementById('meu-formulario').addEventListener('submit', function(e) {
+    e.preventDefault();   
+    });
+
+
+        document.getElementById('calculate').addEventListener('click', function() {
+          const peso = parseFloat(document.getElementById('peso').value);
+          const altura = parseFloat(document.getElementById('altura').value);
+          
+          if (!isNaN(peso) && !isNaN(altura)) {
+            const imc = peso / ((altura*0.01) * (altura*0.01) );
+            document.getElementById('result').textContent = imc.toFixed(2).replace(".",",");
+            const meuElemento = document.querySelector('#result_complete');
+            meuElemento.classList.remove('hidden');
+            //PESO IDEAL?
+            const pesoIdealMin = ((altura*0.01) * (altura*0.01) )*18.6;
+            const pesoIdealMax = ((altura*0.01) * (altura*0.01) )*23.8;
+
+            var pesoIdeal = "\n\n Seu peso ideal é entre " + pesoIdealMin.toFixed(2).replace(".",",") + "kg e " + pesoIdealMax.toFixed(2).replace(".",",")+ "kg";
+
+
+            if(imc < 18.5){
+                document.getElementById('descripition').textContent = "Voce está abaixo do peso!!!" + pesoIdeal
+                document.getElementById('result').style.color = "RED";
+            }
+            else if(imc < 24.9){
+                document.getElementById('descripition').textContent = "Parabéns!!! Voce está no peso ideal."+ pesoIdeal
+                document.getElementById('result').style.color = "aLICEBLUE";
+            }
+            else if(imc < 30){
+                document.getElementById('descripition').textContent = "Voce está com SOBREPESO!!!"+ pesoIdeal
+                document.getElementById('result').style.color = "RED";
+            }
+            else{
+                document.getElementById('descripition').textContent = "Voce está com obesidade!!! procure um médico.."+ pesoIdeal
+                document.getElementById('result').style.color = "RED";
+            }
+
+
+
+          } else {
+            document.getElementById('result').textContent = 'Insira valores válidos.';
+          }
+        });
+      </script>
+      
+</body>
+</html>

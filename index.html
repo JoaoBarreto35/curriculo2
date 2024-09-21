@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfólio</title>
+    <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.5s/css/all.css"> -->
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesMobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="darktheme">
+    <header>
+        <nav>
+            <a onclick="scroollar('AboutMe')">Sobre mim</a>
+            <a onclick="scroollar('Career')">Carreira</a>
+            <a onclick="scroollar('Projects')">Projetos</a>
+            <a onclick="scroollar('Habilidades')">Habilidades</a>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="./imgs/avatar.png" alt="Minha foto" id="avatar" />
+            <p id="title-avatar">Analista de BI & React Developer</p>
+            <div class="information">
+                <p class="info-title">Nome:</p>
+                <p class="info-content">João Vitor Barreto Pereira</p>
+
+                <p class="info-title">Idade:</p>
+                <p class="info-content" id="Idade">22 anos</p>
+
+                <p class="info-title">Português:</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-bottom"></div>
+                    <div class="progress-bar-value" style="width: 100%;">
+                        <div class="progress-bar-text">Nativa</div>
+                    </div>
+                </div>
+                <p class="info-title">Inglês:</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-bottom"></div>
+                    <div class="progress-bar-value" style="width: 80%;">
+                        <div class="progress-bar-text">Avançado</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contato">
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p>E-mail</p>
+                </div>
+                <div>
+                    <i class="fa fa-whatsapp"></i>
+                    <p>Whatsapp</p>
+                </div>
+                <div>
+                    <i class="fa fa-github"></i>
+                    <p>Github</p>
+                </div>
+                <div>
+                    <i class="fa fa-linkedin"></i>
+                    <p>Linkedin</p>
+                </div>
+                <div>
+                    <i class="fa fa-download"></i>
+                    <p>Currículo</p>
+                </div>
+            </div>
+
+        </aside>
+        <section id="content">
+            <section class="container" id="AboutMe">
+                <div class="container-title">
+                    <h1>Sobre mim</h1>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </div>
+                <div class="container-content">
+                    <p>
+                        Sou um apaixonado por dados, padrões, e tecnologia. Minha missão? Transformar números brutos em
+                        histórias signifcativas.
+                        Navego por conjunto de dados como um aventureiro em busca de tesouros, procurando padrões,
+                        anomalias ou qualquer tendência oculta.
+                        Sou como um detetive dos algoritimos, utilizo regressão, árvores de decisão e redes neurais para
+                        prever o futuro (ou ao menos tentar).
+                        <br>
+                    </p>
+                    <p>
+                        <br>
+                        Como um entusiasta da inovação, sou meticuloso quando se trata de design. Afinal, dados corretos
+                        apresentados de forma errada podem
+                        transformar informações valiosas em números aleatórios, prejudicando a tomada de decisão. Assim
+                        como um alfaiate ajusta um terno sob
+                        medida, o design precisa alinhar pixels e cores para que os dados sejam elegantes e impactantes.
+                        Quando bem feito, um gráfico pode
+                        ser mais persuasivo do que um discurso político. Quando malfeito, é como um PowerPoint sem
+                        transições: monótono e esquecível.
+                    </p>
+                </div>
+            </section> <!--container-->
+            <section class="container" id="Career">
+                <div class="container-title">
+                    <h1>Carreira</h1>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+
+                <div class="container-content">
+                    <div id="linhaDoTempo">
+                        <div class="timeLine-item-e ">
+                            <div class="timeLine-icon-e">
+                                <div class="timeLine-year">2017 - 2019</div>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">ETC - Técnico em Administração</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Gestão empresarial;<br>
+                                        Recrutamento;<br>
+                                        Liderança;<br>
+                                        Análise de Custos<br>
+                                    </p>
+                                </details>
+                            </div>
+
+                        </div><!-- </div> fim do item -->
+                        <div class="timeLine-item-d ">
+                            <div class="timeLine-icon-d">
+                                <div class="timeLine-year">2021 - Em curso</div>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">IFSP - Engenharia Controle & Automação</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Estatística;<br>
+                                        C++;<br>
+                                        Arduíno;<br>
+                                    </p>
+                                </details>
+                            </div>
+                        </div><!-- </div> fim do item -->
+                        <div class="timeLine-item-e ">
+                            <div class="timeLine-icon-e">
+                                <div class="timeLine-year">2021 - 2022</div>
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">Teckma - Estágio Engenharia</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Excel;<br>
+                                        Planejamento de manutenção;<br>
+                                        Atendimento ao público;<br>
+                                        Fracttal;<br>
+                                    </p>
+                                </details>
+                            </div>
+                        </div><!-- </div> fim do item -->
+                        <div class="timeLine-item-d ">
+                            <div class="timeLine-icon-d">
+                                <div class="timeLine-year">2022 - 2023</div>
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">Teckma - Técnico de planejamento</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Planejamento de manutenção;<br>
+                                        Excel;<br>
+                                        Power BI;<br>
+                                        Fracttal;<br>
+                                        SAP CORP;<br>
+                                        Dashboards;<br>
+                                    </p>
+                                </details>
+                            </div>
+                        </div><!-- </div> fim do item -->
+                        <div class="timeLine-item-e">
+                            <div class="timeLine-icon-e">
+                                <div class="timeLine-year">2023 - Em curso</div>
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">Uninter - Análise & Desenvolvimento de Sistemas</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Análise de sistemas;<br>
+                                        Automação de sistemas;<br>
+                                        Segurança da informação;<br>
+                                        Python;<br>
+                                        ReactJS;<br>
+                                        Desenvolvimento WEB;<br>
+                                        Ciência de Dados;<br>
+                                    </p>
+                                </details>
+                            </div>
+                        </div><!-- </div> fim do item -->
+                        <div class="timeLine-item-d">
+                            <div class="timeLine-icon-d">
+                                <div class="timeLine-year">2023 - 2024</div>
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">Teckma - Assistente Administrativo</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Excel;<br>
+                                        Power BI;<br>
+                                        Fracttal;<br>
+                                        SAP CORP;<br>
+                                        Dashboards;<br>
+                                        HTML5;<br>
+                                        CSS;<br>
+                                        Unity;<br>
+                                        Automação industrial;<br>
+                                        Realidade Virtual;<br>
+                                        Trello;<br>
+                                        Python;<br>
+                                        API;<br>
+
+                                    </p>
+                                </details>
+                            </div>
+                        </div><!-- </div> fim do item -->
+                        <div class="timeLine-item-e">
+                            <div class="timeLine-icon-e">
+                                <div class="timeLine-year">2024 - Atual</div>
+                                <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            </div>
+                            <div class="timeLine-text">
+                                <p class="timeLine-text-title">Teckma - Analista de Projeto</p>
+                                <details>
+                                    <summary>Habilidades:</summary>
+                                    <p>
+                                        Excel;<br>
+                                        Power BI;<br>
+                                        Fracttal;<br>
+                                        SAP CORP;<br>
+                                        Dashboards;<br>
+                                        HTML5;<br>
+                                        CSS;<br>
+                                        Unity;<br>
+                                        Automação industrial;<br>
+                                        Realidade Virtual;<br>
+                                        Trello;<br>
+                                        Monday;<br>
+                                        Projeto;<br>
+                                        Análise de causa Raiz;<br>
+                                        4W;<br>
+                                        Análise de Dados;<br>
+                                        API;<br>
+                                        KAÍZEN;<br>
+                                        Lean;<br>
+                                        Share Point;<br>
+                                    </p>
+                                </details>
+                            </div>
+                        </div><!-- </div> fim do item -->
+                    </div><!--Linha do tempo final-->
+            </section> <!--container-->
+            <section id="kpi-container">
+                <div class="kpi-item">
+                    <div>
+                        <i class="kpi-logo fa fa-usd"></i>
+                        <h1 class="kpi-numero" data-initial-number="35">0</h1>
+                    </div>
+                    <h4>Projetos Realizados</h4>
+                </div>
+                <div class="kpi-item">
+                    <div>
+                        <i class="kpi-logo fa fa-spinner"></i>
+                        <h1 class="kpi-numero" data-initial-number="10">0</h1>
+                    </div>
+                    <h4>Projetos em Andamento</h4>
+                </div>
+                <div class="kpi-item">
+                    <div>
+                        <i class="kpi-logo fa fa-heart"></i>
+                        <h1 class="kpi-numero" data-initial-number="7">0</h1>
+                    </div>
+                    <h4>Clientes Fiéis</h4>
+                </div>
+                <div class="kpi-item">
+                    <div>
+                        <i class="kpi-logo fa fa-lightbulb-o"></i>
+                        <h1 class="kpi-numero" data-initial-number="99">0</h1>
+                    </div>
+                    <h4>Ideias Malucas</h4>
+                </div>
+                <div class="kpi-item">
+                    <div>
+                        <i class="kpi-logo fa fa-coffee"></i>
+                        <h1 class="kpi-numero" data-initial-number="347">0</h1>
+                    </div>
+                    <h4>Cafés</h4>
+                </div>
+            </section>
+
+            <section class="container" id="Projects">
+                <div class="container-title">
+                    <h1>Projetos</h1>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                </div>
+                <div class="container-subTitle">
+                    <h3 style="color:#858181">./works</h3>
+                </div>
+                <div class="container-content">
+                    <div class="slider">
+                        <div style="background-image: url('./imgs/cover projects/project-imc-img.png');background-size: cover;align-items: center;"
+                            class="card card-site"
+                            data-local="calculadoraIMC">
+                            <span>
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                                <p>Site - Calculadora IMC</p>
+                            </span>
+                        </div>
+                        <div style="background-image: url('./imgs/cover projects/project-pbi-controle-diario.png');background-size: cover;align-items: center;"
+                            class="card">
+                            <span>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p>Power BI - Produtividade manutentor</p>
+                            </span>
+                        </div>
+                        <div style="background-image: url('./imgs/cover projects/project-pbi-ordens-manutencao.png');background-size: cover;align-items: center;"
+                            class="card">
+                            <span>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p>Power BI - Ordens de manutenção</p>
+                            </span>
+                        </div>
+                        <div style="background-image: url('./imgs/cover projects/project-pbi-iot-monitoramento.png');background-size: cover;align-items: center;"
+                            class="card">
+                            <span>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p>Power BI - Monitoramento equipamento IOT</p>
+                            </span>
+                        </div>
+                        <div style="background-image: url('./imgs/cover projects/project-pbi-analise-turnover.png');background-size: cover;align-items: center;"
+                            class="card">
+                            <span>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p>Power BI - Análise de Turnover</p>
+                            </span>
+                        </div>
+                        <div style="background-image: url('./imgs/cover projects/project-pbi-matriz-habilidade.png');background-size: cover;align-items: center;"
+                            class="card">
+                            <span>
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                <p>Power BI - Matriz Habilidade Manutentores</p>
+                            </span>
+                        </div>
+                        <div style="background-image: url('./imgs/cover projects/project-primeiro-portfolio.png');background-size: cover;align-items: center;"
+                            class="card">
+                            <span>
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                                <p>Site - Primeiro portfólio</p>
+                            </span>
+                        </div>
+                        <!-- <img src="./imgs/cover projects/project-imc-img.png"> -->
+                    </div><!--silder-->
+                    <div class="main-button">
+                        <a href="./works.html"><button class="button"><span>+ Projetos</span></button></a>
+                        </div>
+
+                </div>
+            </section> <!--container-->
+            <section class="container" id="Habilidades">
+                <div class="container-title">
+                    <h1>Habilidades</h1>
+                    <i class="fa fa-diamond" aria-hidden="true"></i>
+                </div>
+                <div class="container-content">
+                    <div class="side-e">
+                        <p class="info-title">Power Bi:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 100%;">
+                                <div class="progress-bar-text">Especialista</div>
+                            </div>
+                        </div>
+                        <p class="info-title">Excel:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 100%;">
+                                <div class="progress-bar-text">Especialista</div>
+                            </div>
+                        </div>
+                        <p class="info-title">Python:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 70%;">
+                                <div class="progress-bar-text">Avançado</div>
+                            </div>
+                        </div>
+                        <p class="info-title">Tableau:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 70%;">
+                                <div class="progress-bar-text">Avançado</div>
+                            </div>
+                        </div>
+                        <p class="info-title">SQL:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 80%;">
+                                <div class="progress-bar-text">Experiente</div>
+                            </div>
+                        </div>
+                        <p class="info-title">HTML5 & CSS:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 60%;">
+                                <div class="progress-bar-text">Pleno</div>
+                            </div>
+                        </div>
+                        <p class="info-title">React JS:</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-bottom"></div>
+                            <div class="progress-bar-value" style="width: 50%;">
+                                <div class="progress-bar-text">Júnior</div>
+                            </div>
+                        </div>
+                    </div><!--side-->
+                    <div class="side-d">
+                        <div class="carousel" id="idCarousel">
+                            <div class="item">
+                                <div class="item-titulo">
+                                    <h1>Mas por que me contratar?</h1>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="item-titulo">
+                                    <h1>Análise de Ponta a Ponta</h1>
+                                </div>
+                                <div class="item-text">Com conhecimento em Power Bi, Python e SQL sou capaz de ser o
+                                    responsável desde a criação do banco de dados até a criação dos dashboards</div>
+                            </div>
+                            <div class="item">
+                                <div class="item-titulo">
+                                    <h1>Storytelling - Contando histórias embasadas</h1>
+                                </div>
+                                <div class="item-text">Estou sempre me atualizando em UX e UI, para promover uma
+                                    experiência melhor para o usuário final tomar as decisões mais acertivas, utilizando
+                                    de diversas técnicas de storytelling</div>
+                            </div>
+                            <div class="item">
+                                <div class="item-titulo">
+                                    <h1>Multidisciplinar - integração WEB</h1>
+                                </div>
+                                <div class="item-text">Com habilidades de desenvolvimento Web nativo, ReactJs e Node.Js
+                                    torna-se possível integração de todos os KPI's em único lugar online com
+                                    autenticação, segurança da informação e e dados dinâmicos.</div>
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <button id="carousel-btn-e" onclick="rodar(1)">❮</button>
+                            <button id="carousel-btn-d" onclick="rodar(-1)">❯</button>
+                        </div>
+                    </div>
+                </div><!--container-content-->
+            </section> <!--container-->
+            <footer>
+                <h5>
+                    @2024 - João Vitor Barreto Pereira
+                </h5>
+            </footer>
+        </section> <!--content-->
+    </main>
+
+
+    <script>
+        
+
+        // carrosel
+        const tam = 400;
+
+        function rodar(multiplicador) {
+
+            const carousel = document.getElementById("idCarousel");
+            let larguraCarousel = carousel.offsetWidth * multiplicador;
+            let atual = carousel.style.marginLeft.replace('px', '') * 1;
+            let largura = tam * multiplicador;
+            let value = atual + largura;
+
+            if (multiplicador < 0 && value >= (larguraCarousel - (value * 0.5))) {
+                // alert(value);
+                // alert(larguraCarousel);
+                document.getElementById("carousel-btn-e").style.color = "#fff";
+                carousel.style.marginLeft = value + "px";
+
+                if ((value + largura) < (larguraCarousel - ((value + largura) * 0.5))) {
+                    document.getElementById("carousel-btn-d").style.color = "transparent";
+                }
+            }
+            if (multiplicador > 0 && value < tam) {
+                carousel.style.marginLeft = value + "px";
+                document.getElementById("carousel-btn-d").style.color = "#fff";
+                if ((value + tam) > 0) {
+                    document.getElementById("carousel-btn-e").style.color = "transparent";
+                }
+            }
+
+        }
+
+        // animacao numeros
+        const kpiNumeros = document.querySelectorAll('.kpi-numero');
+
+        function animateNumbers() {
+            kpiNumeros.forEach((element) => {
+
+                const targetNumber = parseInt(element.getAttribute('data-initial-number'), 10);
+                let currentNumber = 0;
+                let animationStarted = false;
+
+                function animateNumber() {
+                    if (currentNumber <= targetNumber) {
+                        element.textContent = currentNumber;
+                        currentNumber++;
+                        requestAnimationFrame(animateNumber);
+                    }
+                }
+
+                function handleScroll() {
+                    const rect = element.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+                    if (isVisible && !animationStarted) {
+                        animationStarted = true;
+                        animateNumber();
+                    }
+                }
+
+                document.getElementById("content").addEventListener('scroll', handleScroll);
+            });
+        }
+
+        animateNumbers();
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
