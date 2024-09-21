@@ -22,7 +22,7 @@
         <nav>
             <a onclick="scroollar('AboutMe')">Sobre mim</a>
             <a onclick="scroollar('Career')">Carreira</a>
-            <a onclick="scroollar('Projects')">Projetos</a>
+            <a href="./works.html">Projetos</a>
             <a onclick="scroollar('Habilidades')">Habilidades</a>
         </nav>
     </header>
@@ -55,11 +55,16 @@
             <div class="contato">
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p>E-mail</p>
+                    <a href="mailto:barretojoao440@gmail.com" target="_blank">
+                        <p>E-mail</p>
+                    </a>
                 </div>
                 <div>
                     <i class="fa fa-whatsapp"></i>
-                    <p>Whatsapp</p>
+                    <a href="https://wa.me/5512992225623?text=Olá!%20Gostaria%20de%20mais%20informações."
+                        target="_blank">
+                        <p>Whatsapp</p>
+                    </a>
                 </div>
                 <div>
                     <i class="fa fa-github"></i>
@@ -71,7 +76,10 @@
                 </div>
                 <div>
                     <i class="fa fa-download"></i>
-                    <p>Currículo</p>
+                    <a href="./JoãoVitor_Pereira_currículo.pdf" target="_blank">
+                        <p>Currículo</p>
+                    </a>
+
                 </div>
             </div>
 
@@ -321,8 +329,7 @@
                 <div class="container-content">
                     <div class="slider">
                         <div style="background-image: url('./imgs/cover projects/project-imc-img.png');background-size: cover;align-items: center;"
-                            class="card card-site"
-                            data-local="calculadoraIMC">
+                            class="card card-site" data-local="calculadoraIMC">
                             <span>
                                 <i class="fa fa-html5" aria-hidden="true"></i>
                                 <p>Site - Calculadora IMC</p>
@@ -333,13 +340,6 @@
                             <span>
                                 <i class="fa fa-bar-chart" aria-hidden="true"></i>
                                 <p>Power BI - Produtividade manutentor</p>
-                            </span>
-                        </div>
-                        <div style="background-image: url('./imgs/cover projects/project-pbi-ordens-manutencao.png');background-size: cover;align-items: center;"
-                            class="card">
-                            <span>
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                <p>Power BI - Ordens de manutenção</p>
                             </span>
                         </div>
                         <div style="background-image: url('./imgs/cover projects/project-pbi-iot-monitoramento.png');background-size: cover;align-items: center;"
@@ -356,13 +356,6 @@
                                 <p>Power BI - Análise de Turnover</p>
                             </span>
                         </div>
-                        <div style="background-image: url('./imgs/cover projects/project-pbi-matriz-habilidade.png');background-size: cover;align-items: center;"
-                            class="card">
-                            <span>
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                <p>Power BI - Matriz Habilidade Manutentores</p>
-                            </span>
-                        </div>
                         <div style="background-image: url('./imgs/cover projects/project-primeiro-portfolio.png');background-size: cover;align-items: center;"
                             class="card">
                             <span>
@@ -374,7 +367,7 @@
                     </div><!--silder-->
                     <div class="main-button">
                         <a href="./works.html"><button class="button"><span>+ Projetos</span></button></a>
-                        </div>
+                    </div>
 
                 </div>
             </section> <!--container-->
@@ -484,7 +477,7 @@
 
 
     <script>
-        
+
 
         // carrosel
         const tam = 400;

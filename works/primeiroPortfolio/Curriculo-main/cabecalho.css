@@ -1,0 +1,27 @@
+#voltar{
+    position: absolute;
+    left: 1%;
+    background-image: url('Imagens/icons/voltar-icon.png');
+    max-width: 30px;
+    width: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 30px;
+    height: auto;
+    border: 0;
+    background-color: transparent;
+}
+#voltar:hover{
+    transform: scale(1.1,1.1);
+}
+footer {
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    
+  }

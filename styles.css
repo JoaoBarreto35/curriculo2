@@ -5,7 +5,10 @@ desfocado -> #6f2232
 rosa vibrante -> 950740
 #vermelho #c3073f
 */
-
+a{
+    text-decoration: none;
+    color: #fff;
+}
 *{
     padding: 0;
     margin: 0;
